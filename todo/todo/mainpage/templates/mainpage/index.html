@@ -1,0 +1,41 @@
+{% extends "mainpage/header_footer.html" %}
+{% block content %}
+{% include "mainpage/main_menu.html" %}
+{% load static %}
+<link href="{% static 'css/style.css' %}" rel="stylesheet">
+<script src="{% static 'js/sc.js' %}"> </script>
+
+
+
+
+
+<p>Список дел!</p>
+<ul>
+    <li>Сходить в магазин</li>
+    
+</ul>
+<ol>
+    {% for задача in Задачи %}
+    {% if задача.done %}
+    <li><s>{{задача.description}}</s></li>
+    {% else %}
+    <li>{{задача.description}}</li>
+     {% endif %}
+    {% endfor %}
+</ol>
+
+<input type='button' onclick='cry()' value='кнопка' />
+<div class = "logo">lorem </div>
+
+{% endblock %}
+
+
+
+gggggggg
+
+
+{% comment %} <ol>
+    {% for  магазин in Категории %}
+    <li>{{магазин.description}}</li>
+    {% endfor %}
+</ol> {% endcomment %}
