@@ -13,15 +13,15 @@
     <section>
         <div class="content">
             <div>
-                <img src="{% static 'images/агуша_' %}" alt="Агуша" width="200px" height="150px">
-                <p>Цена=200руб</p>
+                <img src="{% static 'агуша' %}" alt="Агуша" width="200px" height="150px">
+                <p>Цена=43руб</p>
                 <button class="button-primary plus" data-id="агуша">+</button>
                 <button class="button-primary minus" data-id="агуша">-</button>
                 <p></p>
             </div>
             <div>
-                <img src="{% static 'images/виноград.png' %}" alt="Виноград" width="200px" height="150px">
-                <p>Цена=300руб</p>
+                <img src="{% static 'виноград.png' %}" alt="Виноград" width="200px" height="150px">
+                <p>Цена=140руб</p>
 
                 <button class="button-primary plus" data-id="виноград">+</button>
                 <button class="button-primary minus" data-id="виноград">-</button>
@@ -29,53 +29,47 @@
             </div>
 
             <div>
-                <img src="{% static 'images/вискас.png' %}" alt="Whiscas" width="200px" height="150px">
-                <p>Цена=200руб</p>
+                <img src="{% static 'вискас.png' %}" alt="Whiscas" width="200px" height="150px">
+                <p>Цена=45</p>
                 <button class="button-primary plus" data-id="вискас">+</button>
                 <button class="button-primary minus" data-id="вискас">-</button>
                 <p></p>
             </div>
 
             <div>
-                <img src="{% static 'images/огурцы.png'%}" alt="Огурцы" width="200px" height="150px">
-                <p>Цена=200руб</p>
+                <img src="{% static 'огурцы.png'%}" alt="Огурцы" width="200px" height="150px">
+                <p>Цена=220руб</p>
                 <button class="button-primary plus" data-id="огурцы">+</button>
                 <button class="button-primary minus" data-id="огурцы">-</button>
                 <p></p>
             </div>
 
+            
             <div>
-                <img src="{% static 'images/огурцы.png'%}" alt="Огурцы" width="200px" height="150px">
-                <p>Цена=200руб</p>
-                <button class="button-primary plus" data-id="огурцы">+</button>
-                <button class="button-primary minus" data-id="огурцы">-</button>
-                <p></p>
-            </div>
-            <div>
-                <img src="{% static 'images/пельмени.png' %}" alt="Пельмени" width="200px" height="150px">
-                <p>Цена=200руб</p>
+                <img src="{% static 'пельмени.png' %}" alt="Пельмени" width="200px" height="150px">
+                <p>Цена=150руб</p>
                 <button class="button-primary plus" data-id=" пельмени">+</button>
                 <button class="button-primary minus" data-id="пельмени">-</button>
                 <p></p>
             </div>
             <div>
-                <img src="{% static 'images/плов.png' %}" alt="Плов" width="200px" height="150px">
-                <p>Цена=200руб</p>
+                <img src="{% static 'плов.png' %}" alt="Плов" width="200px" height="150px">
+                <p>Цена=150руб</p>
                 <button class="button-primary plus" data-id="плов">+</button>
                 <button class="button-primary minus" data-id="плов">-</button>
                 <p></p>
             </div>
 
             <div>
-                <img src="{% static 'images/порошок.png' %}" alt="Порошок" width="200px" height="150px">
-                <p>Цена=200руб</p>
+                <img src="{% static 'порошок.png' %}" alt="Порошок" width="200px" height="150px">
+                <p>Цена=550руб</p>
                 <button class="button-primary plus" data-id="порошок">+</button>
                 <button class="button-primary minus" data-id="порошок">-</button>
                 <p></p>
             </div>
 
             <div>
-                <img src="{% static 'images/сыр.png' %}" alt="Сыр" width="200px" height="150px">
+                <img src="{% static 'сыр.png' %}" alt="Сыр" width="200px" height="150px">
                 <p>Цена=200руб</p>
                 <button class="button-primary plus" data-id="сыр">+</button>
                 <button class="button-primary minus" data-id="сыр">-</button>
@@ -83,16 +77,16 @@
             </div>
 
             <div>
-                <img src="{% static 'images/холодиильник.png' %}" alt="Холодильник" width="200px" height="150px">
-                <p>Цена=200руб</p>
+                <img src="{% static 'холодиильник.png' %}" alt="Холодильник" width="200px" height="150px">
+                <p>Цена=12000руб</p>
                 <button class="button-primary plus" data-id="холодильник">+</button>
                 <button class="button-primary minus" data-id="холодильник">-</button>
                 <p></p>
             </div>
             
             <div>
-                <img src="{% static 'images/шампунь.png' %}" alt="Шампунь" width="200px" height="150px">
-                <p>Цена=200руб</p>
+                <img src="{% static 'шампунь.png' %}" alt="Шампунь" width="200px" height="150px">
+                <p>Цена=175руб</p>
                 <button class="button-primary plus" data-id="шампунь">+</button>
                 <button class="button-primary minus" data-id="шампунь">-</button>
                 <p></p>
@@ -107,7 +101,7 @@
 
         <table border="1">
             {% for товар in Товары %}
-            <tr>
+            <tr> 
                 <th><img width="70px" height="50px" src="/static/images/{{товар.picture}}"></th>
                 <th>{{товар.namegoods}}</th>
                 <th>{{товар.price}}</th>

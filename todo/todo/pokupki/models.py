@@ -1,13 +1,5 @@
 from django.db import models
 from datetime import datetime
-
-
-class Task(models.Model):
-    # id создастся сам!
-    start = models.DateTimeField(default=datetime.now)
-    end = models.DateTimeField()
-    description = models.CharField(max_length=256, default='')
-    done = models.BooleanField(default=False)
                                                                                                                          
 # Create your models here.
 class Pokupka(models.Model):
