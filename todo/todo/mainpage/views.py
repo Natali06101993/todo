@@ -28,5 +28,12 @@ def index(request):
         
     )
 
-
+def add_task(request):
+    if request.method == 'POST':
+        print(request.POST)
+    return render(            
+        request,         
+        'mainpage/form.html',
+        {}
+    )   
 # def page(*a, **b):
