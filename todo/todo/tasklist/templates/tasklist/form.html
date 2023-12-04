@@ -1,0 +1,12 @@
+{% load static %}
+<link href="{% static 'css/form.css' %}" rel="stylesheet">
+{% comment %} <script src="{% static 'index2.js' %}"></script> {% endcomment %}
+
+
+<form action='/tasklist/add' method="post">
+    {% csrf_token %}
+    <input name='data' type='text' value='Данные'>
+    {{ task_form_auto_gen }}
+    <input type="submit" value="Ok">
+    </form>
+
